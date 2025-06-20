@@ -1,0 +1,23 @@
+{
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "regions": ["iad1"],
+  "env": {
+    "GOOGLE_API_KEY": {
+      "description": "Google Generative AI API key for Gemini model",
+      "required": true
+    }
+  },
+  "functions": {
+    "app/api/generate/route.ts": {
+      "runtime": "edge",
+      "maxDuration": 30
+    },
+    "app/api/generate-data/route.ts": {
+      "runtime": "edge",
+      "maxDuration": 30
+    }
+  }
+}
