@@ -22,7 +22,7 @@ const dataTemplates = [
   "Social media engagement metrics with posts, likes, and shares"
 ];
 
-export async function POST(req: Request) {
+export async function POST() {
   console.log("POST /api/generate-data - Start");
 
   if (!process.env.GOOGLE_API_KEY) {

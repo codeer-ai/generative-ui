@@ -94,7 +94,7 @@ const DynamicComponent: React.FC<DynamicComponentProps> = ({
 
     try {
       // Strip markdown code blocks if present
-      let cleanedCode = componentCode
+      const cleanedCode = componentCode
         .replace(/^```(jsx|tsx|javascript|typescript)?\n?/m, '')
         .replace(/\n?```$/m, '')
         .trim();

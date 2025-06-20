@@ -5,7 +5,8 @@
       "Bash(ls:*)",
       "Bash(grep:*)",
       "Bash(npx shadcn@latest add:*)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)"
     ],
     "deny": []
   }
