@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js" alt="Next.js" />
   <img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" />
   <img src="https://img.shields.io/badge/TypeScript-5.3-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Gemini_AI-2.0-4285F4?style=flat-square&logo=google&logoColor=white" alt="Gemini AI" />
+  <img src="https://img.shields.io/badge/Gemini_AI-2.5-4285F4?style=flat-square&logo=google&logoColor=white" alt="Gemini AI" />
   <img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" />
 </div>
 
