@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:ai-sdk.dev)",
+      "Bash(ls:*)",
+      "Bash(grep:*)",
+      "Bash(npx shadcn@latest add:*)",
+      "Bash(npm install:*)"
+    ],
+    "deny": []
+  }
+}
