@@ -12,11 +12,11 @@ import DynamicComponent from "@/components/dynamic-component";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 const exampleData = {
-  vitals: `Day,Systolic,Diastolic,Pulse\nMonday AM,120,80,72\nMonday PM,118,78,70\nTuesday AM,122,82,74\nTuesday PM,125,84,76\nWednesday AM,119,79,71\nWednesday PM,121,81,73`,
-  tasks: `- Complete project proposal (done)\n- Review pull requests (in progress)\n- Update documentation (todo)\n- Fix critical bug (urgent)\n- Team standup at 2pm (done)\n- Deploy to production (blocked)\n- Write test cases (in progress)`,
-  sales: `Quarter,Revenue,Deals,Pipeline\nQ1,125000,45,280000\nQ2,145000,52,320000\nQ3,180000,67,410000\nQ4,220000,78,520000`,
-  events: `Event Name | Date | Attendees | Rating\nTech Conference 2024 | 2024-03-15 | 250 | 4.8\nWorkshop: React Best Practices | 2024-03-22 | 45 | 4.6\nNetworking Mixer | 2024-04-05 | 120 | 4.2\nProduct Launch Event | 2024-04-18 | 300 | 4.9\nCode Review Session | 2024-04-25 | 28 | 4.7`,
-  inventory: `Product,Stock,Price,Category,Status\nLaptop Pro 15,25,$1299,Electronics,In Stock\nWireless Mouse,150,$29,Electronics,In Stock\nOffice Chair Premium,8,$599,Furniture,Low Stock\nStanding Desk,3,$899,Furniture,Critical\nWebcam 4K,45,$149,Electronics,In Stock\nDesk Lamp LED,67,$79,Furniture,In Stock\nKeyboard Mechanical,12,$199,Electronics,Low Stock`,
+  fitness: `Activity,Duration(min),Calories,HeartRate,Distance(km)\nMorning Run,45,420,145,6.2\nYoga Session,60,180,95,0\nCycling,90,650,138,25.5\nSwimming,30,280,125,1.2\nHIIT Workout,25,310,162,0\nEvening Walk,40,150,98,3.8\nWeight Training,50,220,118,0`,
+  library: `Title,Author,Genre,Rating,Year,Available\nThe Midnight Library,Matt Haig,Fiction,4.8,2020,Yes\nAtomic Habits,James Clear,Self-Help,4.9,2018,No\nProject Hail Mary,Andy Weir,Sci-Fi,4.7,2021,Yes\nEducated,Tara Westover,Memoir,4.6,2018,Yes\nThe Silent Patient,Alex Michaelides,Thriller,4.5,2019,No\nSapiens,Yuval Noah Harari,History,4.8,2011,Yes\nDune,Frank Herbert,Sci-Fi,4.9,1965,Yes`,
+  orders: `Order ID,Customer,Items,Total,Time,Status\n#1234,Sarah Chen,"Pizza Margherita, Salad",$28.50,12:15 PM,Delivered\n#1235,Mike Johnson,"Burger Deluxe, Fries, Coke",$18.99,12:30 PM,Preparing\n#1236,Emily Davis,"Pasta Carbonara, Wine",$35.00,12:45 PM,Ready\n#1237,Alex Wong,"Sushi Platter, Miso Soup",$42.80,1:00 PM,In Transit\n#1238,Lisa Brown,"Caesar Salad, Smoothie",$16.75,1:15 PM,Confirmed`,
+  weather: `Location | Time | Temp(°C) | Humidity(%) | Condition | Wind(km/h)\nTokyo | 08:00 | 22 | 65 | Partly Cloudy | 12\nLondon | 08:00 | 14 | 78 | Light Rain | 18\nNew York | 08:00 | 18 | 52 | Clear | 8\nSydney | 08:00 | 26 | 70 | Sunny | 15\nDubai | 08:00 | 35 | 45 | Hot & Dry | 22\nParis | 08:00 | 16 | 68 | Overcast | 10`,
+  employees: `- John Smith (Engineering) - Senior Developer - john.smith@company.com - Ext: 2154\n- Maria Garcia (Marketing) - Brand Manager - maria.garcia@company.com - Ext: 3287\n- David Lee (Sales) - Account Executive - david.lee@company.com - Ext: 4156\n- Emma Wilson (HR) - Talent Acquisition - emma.wilson@company.com - Ext: 5623\n- Robert Chen (Finance) - Financial Analyst - robert.chen@company.com - Ext: 6789\n- Sophie Turner (Design) - UX Designer - sophie.turner@company.com - Ext: 7432\n- James Park (Engineering) - DevOps Engineer - james.park@company.com - Ext: 8901`,
 };
 
 export default function Home() {
@@ -151,41 +151,41 @@ export default function Home() {
                   variant="outline"
                   size="sm"
                   className="h-8 px-3 text-xs font-[500] border-[#e6e6e6] dark:border-[#30363d] hover:border-[#0969da] dark:hover:border-[#58a6ff] hover:bg-[#f6f8fa] dark:hover:bg-[#21262d] text-[#0f1419] dark:text-[#f0f6fc]"
-                  onClick={() => setData(exampleData.vitals)}
+                  onClick={() => setData(exampleData.fitness)}
                 >
-                  📊 Health Vitals
+                  🏃 Fitness Tracking
                 </Button>
                 <Button
                   variant="outline"
                   size="sm"
                   className="h-8 px-3 text-xs font-[500] border-[#e6e6e6] dark:border-[#30363d] hover:border-[#0969da] dark:hover:border-[#58a6ff] hover:bg-[#f6f8fa] dark:hover:bg-[#21262d] text-[#0f1419] dark:text-[#f0f6fc]"
-                  onClick={() => setData(exampleData.tasks)}
+                  onClick={() => setData(exampleData.library)}
                 >
-                  ✅ Task List
+                  📚 Library Collection
                 </Button>
                 <Button
                   variant="outline"
                   size="sm"
                   className="h-8 px-3 text-xs font-[500] border-[#e6e6e6] dark:border-[#30363d] hover:border-[#0969da] dark:hover:border-[#58a6ff] hover:bg-[#f6f8fa] dark:hover:bg-[#21262d] text-[#0f1419] dark:text-[#f0f6fc]"
-                  onClick={() => setData(exampleData.sales)}
+                  onClick={() => setData(exampleData.orders)}
                 >
-                  💰 Sales Data
+                  🍕 Restaurant Orders
                 </Button>
                 <Button
                   variant="outline"
                   size="sm"
                   className="h-8 px-3 text-xs font-[500] border-[#e6e6e6] dark:border-[#30363d] hover:border-[#0969da] dark:hover:border-[#58a6ff] hover:bg-[#f6f8fa] dark:hover:bg-[#21262d] text-[#0f1419] dark:text-[#f0f6fc]"
-                  onClick={() => setData(exampleData.events)}
+                  onClick={() => setData(exampleData.weather)}
                 >
-                  🎪 Events
+                  🌡️ Weather Monitoring
                 </Button>
                 <Button
                   variant="outline"
                   size="sm"
                   className="h-8 px-3 text-xs font-[500] border-[#e6e6e6] dark:border-[#30363d] hover:border-[#0969da] dark:hover:border-[#58a6ff] hover:bg-[#f6f8fa] dark:hover:bg-[#21262d] text-[#0f1419] dark:text-[#f0f6fc]"
-                  onClick={() => setData(exampleData.inventory)}
+                  onClick={() => setData(exampleData.employees)}
                 >
-                  📦 Inventory
+                  💼 Employee Directory
                 </Button>
               </div>
             </div>
