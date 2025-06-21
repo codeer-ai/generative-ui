@@ -161,11 +161,11 @@ Generative UI is an innovative application that leverages Google's Gemini AI to 
 
 #### Generate Sample Data
 Click "Generate Sample Data" to let AI create realistic datasets:
-- Sales data with trends
-- User analytics
-- Inventory management
-- Task tracking
-- Event schedules
+- Fitness tracking with activities and metrics
+- Library book collections with ratings
+- Restaurant order management
+- Weather monitoring across locations
+- Employee directories with departments
 - And more...
 
 #### Customize Output
